@@ -1,0 +1,129 @@
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+p {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+h2, h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;  
+}
+a {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+html {
+    background-color: var(--Very-pale-blue);
+}
+
+
+/* Project */
+.hero {
+    background-color: white;
+    width: 80%;
+    border-radius: 0 0 20px 20px;
+    height: 550px;
+    margin: 100px 0 0 10%;
+}
+.hero__image-i {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.hero__main {
+    text-align: center;
+    margin: 20px 5px 5px 20px;
+}
+.hero__main-p {
+    max-width: 100%;
+    margin: 15px 0 35px 0;
+}
+
+.hero__plan {
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+    
+}
+.hero__plan-imagine {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.hero__price-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__planchange {
+    padding: 25px;
+}
+
+
+.hero__checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__checkout1 {
+    text-decoration: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    border: solid;
+    padding: .6rem 1.6rem;
+    border-radius: .7rem;
+    font-weight: 60rem;
+    box-shadow: 0 0 1px;
+    margin: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.hero__checkout1:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+.hero__cancel {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+@media (min-width: 900px) {
+    .hero {
+        background-color: white;
+        width: 25%;
+        border-radius: 0 0 20px 20px;
+        height: 550px;
+        margin: 100px 0 0 40%;
+    }
+}
